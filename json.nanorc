@@ -7,6 +7,8 @@ color blue   "\<[-]?[1-9][0-9]*([Ee][+-]?[0-9]+)?\>"  "\<[-]?[0](\.[0-9]+)?\>"
 color cyan  "\<null\>"
 color brightcyan "\<(true|false)\>"
 color yellow ""(\\.|[^"])*"|'(\\.|[^'])*'"
+# Values (well, any string).
+color brightmagenta "\".+\""
 color brightyellow "\"(\\"|[^"])*\"[[:space:]]*:"  "'(\'|[^'])*'[[:space:]]*:"
 color magenta   "\\u[0-9a-fA-F]{4}|\\[bfnrt'"/\\]"
 color ,green "[[:space:]]+$"

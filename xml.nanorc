@@ -1,3 +1,4 @@
+
 ## Here is an example for xml files.
 ##
 
@@ -7,9 +8,16 @@ magic "(XML|SGML) (sub)?document"
 comment "<!--|-->"
 
 color white "^.+$"
+# Attributes
 color green  start="<" end=">"
-color cyan   "<[^> ]+"
-color cyan   ">"
+color brightgreen "=\"[^\"]*\""
+# Opening tags
+color brightcyan   "<[^/][^> ]*"
+color brightcyan   ">"
+# Closing tags
+color cyan "</[^> ]*>"
+# Self-closing part
+color cyan "/>"
 color yellow start="<!DOCTYPE" end="[/]?>"
 color yellow start="<!--" end="-->"
 color red    "&[^;]*;"
