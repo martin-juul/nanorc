@@ -1,0 +1,13 @@
+include /Users/martin/.nano/nanorc/*.nanorc
+
+# Constantly display the cursor position in the status bar
+set constantshow
+
+# show line numbers
+set linenumbers
+
+# By default if the file doesn’t have a newline at the end of the file, it adds one, this can cause fun with checksums
+set nonewlines
+
+# Warns you if the file is already open, though you can still proceed to edit. 
+set locking
